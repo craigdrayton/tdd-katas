@@ -1,0 +1,14 @@
+{
+  "name": "js-tdd",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "test": "yarn node --experimental-vm-modules $(yarn bin jest)",
+    "watch": "yarn node --experimental-vm-modules $(yarn bin jest) --watch"
+  },
+  "devDependencies": {
+    "jest": "^29.6.2"
+  }
+}
