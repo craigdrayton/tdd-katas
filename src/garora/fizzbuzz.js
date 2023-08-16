@@ -2,6 +2,9 @@ export default fizzbuzz = () =>
   Array(100)
     .fill(null)
     .map((_, index) => {
-      if ((index + 1) % 3 == 0) return "Fizz";
-      return index + 1;
+      const n = index + 1;
+      if (n % 3 == 0 && n % 5 == 0) return "FizzBuzz";
+      if (n % 3 == 0) return "Fizz";
+      if (n % 5 == 0) return "Buzz";
+      return n;
     });
