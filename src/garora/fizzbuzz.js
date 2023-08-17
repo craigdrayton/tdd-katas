@@ -1,3 +1,9 @@
+/**
+ * Returns an array with numbers from 1 to 100,
+ * where multiples of 3 are replaced by "Fizz",
+ * multiples of 5 are replaced by "Buzz",
+ * and multiples of both 3 and 5 are replaced by "FizzBuzz"
+ */
 export default fizzbuzz = () =>
   Array(100)
     .fill(null)
