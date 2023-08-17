@@ -5,10 +5,16 @@
   "main": "index.js",
   "license": "UNLICENSED",
   "scripts": {
-    "test": "yarn node --experimental-vm-modules $(yarn bin jest)",
+    "test": "yarn node --experimental-vm-modules $(yarn bin jest) --coverage && npx istanbul-badges-readme",
     "watch": "yarn node --experimental-vm-modules $(yarn bin jest) --watch"
   },
   "devDependencies": {
+    "istanbul-badges-readme": "^1.8.5",
     "jest": "^29.6.2"
+  },
+  "jest": {
+    "coverageReporters": [
+      "json-summary"
+    ]
   }
 }
